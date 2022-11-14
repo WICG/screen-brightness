@@ -38,7 +38,7 @@ Only elements with the `increaseBrightness` attribute would trigger this behavio
 Based on the following signals, the browser MAY choose to proactively brighten an area of the screen or the whole screen, provide an affordance for the user to brighten the screen, or ignore the `increaseBrightness` attribute:
 
 - The website is in a secure browsing context.
-- The element is displayed fullscreen.
+- The element is displayed fullscreen (or the [display mode](https://www.w3.org/TR/mediaqueries-5/#display-mode) of the active document is "fullscreen").
 - The element is visible.
 - The element is "scannable" (e.g. QR code, barcode).
 
@@ -49,6 +49,8 @@ Based on the following signals, the browser MAY choose to restore screen brightn
 - The website abuses of the `increaseBrightness` attribute and fires too many requests.
 
 To avoid possible user fingerprinting issues, a website is not able to detect when screen brightness is increased.
+
+Futher, exiting full screen, or no the "fullscreen" display mode no longer applying, returns the screen brightness to its default state. 
 
 ## Open design issues
 
