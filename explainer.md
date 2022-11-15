@@ -50,7 +50,7 @@ Based on the following signals, the browser MAY choose to restore screen brightn
 
 To avoid possible user fingerprinting issues, a website is not able to detect when screen brightness is increased.
 
-Futher, exiting full screen, or no the "fullscreen" display mode no longer applying, returns the screen brightness to its default state. 
+Further, exiting full screen, or the "fullscreen" display mode is no longer applying, returns the screen brightness to its default state. 
 
 ## Open design issues
 
